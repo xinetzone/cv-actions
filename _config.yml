@@ -2,3 +2,6 @@ theme: jekyll-theme-cayman
 title: 计算机视觉
 description: 学习和探索计算机视觉的视界
 show_downloads: true
+markdown: kramdown
+kramdown:
+   math_engine: mathjax
