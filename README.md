@@ -6,15 +6,20 @@
 
 ## 项目初始化
 
+项目目录清单：
+
+- `/docs/`：存放一些教程，使用说明之类的文档（注意：使用 markdown 书写）
+- `data/`: 数据的存放
+- `models/`: 模型的参数存储
+- `outputs/`: 模型的输出结果，可以创建子目录 `data/` 存放大文件
+- `/app/`：存放相关的 API
+- `notebook/`：存放 jupyter notebook 等相关的文件
+- `draft/`：(可以放置在任何位置)存放一些不成熟的或者未开发完成的一些相关内容，不被上传到 github
+
+由于 `data/`，`models/`，`draft/` 加入到 `.gitignore` 不被 git 管理，所以，当您 fork 到本地时，需要在终端执行：
+
 ```sh
 $ mkdir data draft models
 ```
 
-- `data/`: 数据的存放
-- `models/`: 模型的参数存储
-- `outputs/`: 模型的输出结果
-- `app/`：存放相关的 API
-- `notebook/`：存放 jupyter notebook 等相关的文件
-- `draft/`：(可以放置在任何位置)存放一些不成熟的或者未开发完成的一些相关内容，不被上传到 github
-
-其中 `data/`，`models/`，`draft/` 加入到 `.gitignore` 不被 git 管理。
+为了避免项目的混乱，使用 Git Flow 进行管理。当您将项目克隆的本地电脑后，请您运行：`git flow init` 并随之切换到 develop。
