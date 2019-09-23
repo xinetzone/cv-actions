@@ -16,3 +16,5 @@ $ mkdir data draft models
 - `draft/`：(可以放置在任何位置)存放一些不成熟的或者未开发完成的一些相关内容，不被上传到 github
 
 其中 `data/`，`models/`，`draft/` 加入到 `.gitignore` 不被 git 管理。
+
+$2^4=16$
