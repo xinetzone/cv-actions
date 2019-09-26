@@ -45,7 +45,7 @@ $ mkdir data draft models
 
 ## 许可证
 
-此项目根据 GNU GPL-v3 许可证获得许可 - 有关详细信息，请参阅 [LICENSE](LICENSE) 文件。
+此项目根据 GNU GPL-v3 许可证获得许可 - 有关详细信息，请参阅 [LICENSE](LICENSE.md) 文件。
 
 ## 致谢
 
