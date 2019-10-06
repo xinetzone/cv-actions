@@ -22,7 +22,7 @@
 $ mkdir data draft models
 ```
 
-为了避免项目的混乱，使用 Git Flow 进行管理。当您将项目克隆的本地电脑后，请您运行：`git flow init` 并随之切换到 develop。具体是使用请 :book: <https://xinetzone.github.io/projects/>。
+为了避免项目的混乱，使用 Git Flow 进行管理。当您将项目克隆到您的本地电脑后，请您运行：`git flow init` 并随之切换到 develop。具体是使用请 :book: <https://xinetzone.github.io/projects/>。
 
 ## 待办事项
 
@@ -31,7 +31,7 @@ $ mkdir data draft models
 
 ## 投稿
 
-请阅读 [CONTRIBUTING](CONTRIBUTING.md)，了解本站的行为准则以及如何提交拉取请求。不想贡献代码者可以在 `/docs/` 中提供教程等文档。
+请阅读 [贡献指南](CONTRIBUTING.md)，了解本站的[行为准则](CODE_OF_CONDUCT.md)以及如何提交拉取请求。不想贡献代码者可以在 `/docs/` 中提供教程等文档。
 
 ## 版本发布
 
