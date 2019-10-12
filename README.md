@@ -1,6 +1,6 @@
 # 动手实践计算机视觉
 
-[![GitHub issues](https://img.shields.io/github/issues/xinetzone/cv-actions)](https://github.com/xinetzone/cv-actions/issues) [![GitHub forks](https://img.shields.io/github/forks/xinetzone/cv-actions)](https://github.com/xinetzone/cv-actions/network) [![GitHub stars](https://img.shields.io/github/stars/xinetzone/cv-actions)](https://github.com/xinetzone/cv-actions/stargazers) [![GitHub license](https://img.shields.io/github/license/xinetzone/cv-actions)](https://github.com/xinetzone/cv-actions/blob/master/LICENSE) [![HitCount](http://hits.dwyl.io/xinetzone/cv-actions.svg)](http://hits.dwyl.io/xinetzone/cv-actions) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cv) ![repo size](https://img.shields.io/github/repo-size/xinetzone/cv-actions.svg) [![contributors](https://img.shields.io/github/contributors/xinetzone/cv-actions.svg)](https://github.com/xinetzone/cv-actions/graphs/contributors) [![watcher](https://img.shields.io/github/watchers/xinetzone/cv-actions.svg)](https://github.com/xinetzone/cv-actions/watchers) [![Join the chat at https://gitter.im/cv-actions/community](https://badges.gitter.im/cv-actions/community.svg)](https://gitter.im/cv-actions/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![GitHub issues](https://img.shields.io/github/issues/xinetzone/cv-actions)](https://github.com/xinetzone/cv-actions/issues) [![GitHub forks](https://img.shields.io/github/forks/xinetzone/cv-actions)](https://github.com/xinetzone/cv-actions/network) [![GitHub stars](https://img.shields.io/github/stars/xinetzone/cv-actions)](https://github.com/xinetzone/cv-actions/stargazers) [![GitHub license](https://img.shields.io/github/license/xinetzone/cv-actions)](https://github.com/xinetzone/cv-actions/blob/master/LICENSE) [![HitCount](http://hits.dwyl.io/xinetzone/cv-actions.svg)](http://hits.dwyl.io/xinetzone/cv-actions) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cv) ![repo size](https://img.shields.io/github/repo-size/xinetzone/cv-actions.svg) [![contributors](https://img.shields.io/github/contributors/xinetzone/cv-actions.svg)](https://github.com/xinetzone/cv-actions/graphs/contributors) [![watcher](https://img.shields.io/github/watchers/xinetzone/cv-actions.svg)](https://github.com/xinetzone/cv-actions/watchers) [![Gitter](https://badges.gitter.im/watersome/community.svg)](https://gitter.im/watersome/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 打造一个用于学习和探索计算机视觉的社区。关于如何构建一个属于自己的项目，可以参考我的博文 [📖构建个人项目](https://xinetzone.github.io/zh-CN/e6d6f9e7.html)。
 
@@ -28,7 +28,7 @@ $ mkdir data draft models
 
 - [ ] 在 `/docs/` 中创建一个社区（暂定 <https://gitpress.io/c/cv_actions/>），使其支持 Katex
 - [ ] 补充计算机视觉动手实践教程
-- [ ] 创建 issue 社区：gitter@[cv-actions](https://gitter.im/cv-actions/community)
+- [ ] 创建 issue 社区：gitter@[cv-actions](https://gitter.im/watersome/community)
 
 ## 投稿
 
