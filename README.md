@@ -1,12 +1,12 @@
-## 动手实践计算机视觉
+# 动手实践计算机视觉
 
 [![GitHub issues](https://img.shields.io/github/issues/xinetzone/cv-actions)](https://github.com/xinetzone/cv-actions/issues) [![GitHub forks](https://img.shields.io/github/forks/xinetzone/cv-actions)](https://github.com/xinetzone/cv-actions/network) [![GitHub stars](https://img.shields.io/github/stars/xinetzone/cv-actions)](https://github.com/xinetzone/cv-actions/stargazers) [![GitHub license](https://img.shields.io/github/license/xinetzone/cv-actions)](https://github.com/xinetzone/cv-actions/blob/master/LICENSE) [![HitCount](http://hits.dwyl.io/xinetzone/cv-actions.svg)](http://hits.dwyl.io/xinetzone/cv-actions) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cv) ![repo size](https://img.shields.io/github/repo-size/xinetzone/cv-actions.svg) [![contributors](https://img.shields.io/github/contributors/xinetzone/cv-actions.svg)](https://github.com/xinetzone/cv-actions/graphs/contributors) [![watcher](https://img.shields.io/github/watchers/xinetzone/cv-actions.svg)](https://github.com/xinetzone/cv-actions/watchers) [![Join the chat at https://gitter.im/cv-actions/community](https://badges.gitter.im/cv-actions/community.svg)](https://gitter.im/cv-actions/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-打造一个用于学习和探索计算机视觉的社区。
+打造一个用于学习和探索计算机视觉的社区。关于如何构建一个属于自己的项目，可以参考我的博文 [📖构建个人项目](https://xinetzone.github.io/zh-CN/e6d6f9e7.html)。
 
-## 项目初始化
+## 项目组件
 
-项目目录清单：
+项目的功能性目录清单：
 
 - `/docs/`：存放一些教程，使用说明之类的文档（注意：使用 markdown 书写）
 - `data/`: 数据的存放
@@ -22,16 +22,17 @@
 $ mkdir data draft models
 ```
 
-为了避免项目的混乱，使用 Git Flow 进行管理。当您将项目克隆的本地电脑后，请您运行：`git flow init` 并随之切换到 develop。具体是使用请 :book: <https://xinetzone.github.io/projects/>。
+为了避免项目的混乱，使用 Git Flow 进行管理。当您将项目克隆到您的本地电脑后，请您运行：`git flow init` 并随之切换到 develop。具体是使用请 📖<https://xinetzone.github.io/projects/>。
 
 ## TODOS
 
 - [ ] 在 `/docs/` 中创建一个社区（暂定 <https://gitpress.io/c/cv_actions/>），使其支持 Katex
 - [ ] 补充计算机视觉动手实践教程
+- [ ] 创建 issue 社区：gitter@[cv-actions](https://gitter.im/cv-actions/community)
 
 ## 投稿
 
-请阅读 [CONTRIBUTING](CONTRIBUTING.md)，了解本站的行为准则以及如何提交拉取请求。不想贡献代码者可以在 `/docs/` 中提供教程等文档。
+请阅读 [贡献指南](CONTRIBUTING.md)，了解本站的[行为准则](CODE_OF_CONDUCT.md)以及如何提交拉取请求。不想贡献代码者可以在 `/docs/` 中提供教程等文档。
 
 ## 版本发布
 
