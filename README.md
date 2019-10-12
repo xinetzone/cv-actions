@@ -28,7 +28,7 @@ $ mkdir data draft models
 
 - [ ] 在 `/docs/` 中创建一个社区（暂定 <https://gitpress.io/c/cv_actions/>），使其支持 Katex
 - [ ] 补充计算机视觉动手实践教程
-- [ ] 创建 issue 社区：gitter@[cv-actions](https://gitter.im/cv-actions/community)
+- [ ] 创建 issue 社区：gitter@[cv-actions](https://gitter.im/watersome/community)
 
 ## 投稿
 
