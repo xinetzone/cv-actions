@@ -36,7 +36,7 @@
 ## 获得联系
 
 - 您可以在 gitter@[cv-actions](https://gitter.im/watersome/community) 上讨论 Issue 等
-- 如果有疑问，请您 ✉️ xinzone@outlook.com
+- 如果有疑问，请您 ✉️ <xinzone@outlook.com>
 
 ## TODOS
 
