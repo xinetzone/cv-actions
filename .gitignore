@@ -107,3 +107,6 @@ venv.bak/
 data/
 draft/
 models/
+xin-css/
+w3css/
+_build/
