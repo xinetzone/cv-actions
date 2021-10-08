@@ -1,0 +1,32 @@
+format: jb-book
+root: index
+parts:
+- caption: 教程
+  chapters:
+  - file: README
+  - file: docs/start/index
+    sections:
+    - glob: docs/start/**
+  - file: docs/tutorials/index
+    sections:
+    - glob: docs/tutorials/**
+
+- caption: 原理
+  chapters:
+  - file: docs/principle/index
+    sections:
+    - glob: docs/principle/**
+
+- caption: 混沌
+  chapters:
+  - file: docs/about/index
+    sections:
+      - glob: docs/about/**
+      - file: CHANGELOG
+      - file: CONTRIBUTING
+      - file: CODE_OF_CONDUCT
+  - file: docs/other/index
+    sections:
+    - glob: docs/other/**
+    - url: https://xinetzone.github.io/sanstyle-book/
+      title: Sanstyle Book

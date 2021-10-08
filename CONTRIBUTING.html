@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>贡献指南 &#8212; 计算机视觉</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="_static/page.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/xin-css/main.css" />
+    <link rel="stylesheet" type="text/css" href="_static/w3css/4/w3pro.css" />
+    <link rel="stylesheet" type="text/css" href="_static/w3css/4/w3mobile.css" />
+    <link rel="stylesheet" type="text/css" href="_static/w3css/4/w3.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/tabs.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "xinetzone/cv-actions");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script src="_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://xinetzone.github.io/cv-actions/CONTRIBUTING.html" />
+    <link rel="shortcut icon" href="_static/page-logo.jfif"/>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="Contributor Covenant Code of Conduct" href="CODE_OF_CONDUCT.html" />
+    <link rel="prev" title="变更日志" href="CHANGELOG.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">计算机视觉</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p class="caption" role="heading">
+ <span class="caption-text">
+  教程
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="README.html">
+   动手实践计算机视觉
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="docs/start/index.html">
+   快速启动
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/start/00_how.html">
+     如何启动项目
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="docs/tutorials/index.html">
+   指南
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/tutorials/what.html">
+     What
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  原理
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="docs/principle/index.html">
+   解释
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/principle/topic.html">
+     高级教程
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p class="caption" role="heading">
+ <span class="caption-text">
+  混沌
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="docs/about/index.html">
+   关于
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/about/architecture.html">
+     项目架构
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/about/zreferences.html">
+     参考文献
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CHANGELOG.html">
+     变更日志
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     贡献指南
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="CODE_OF_CONDUCT.html">
+     Contributor Covenant Code of Conduct
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="docs/other/index.html">
+   外部资源
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="docs/other/raw.html">
+     未整理资源
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://xinetzone.github.io/sanstyle-book/">
+     Sanstyle Book
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <div class="w3-padding w3-card-4 w3-pale-green">
+  <a href="https://github.com/xinetzone" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub"
+      data-position="top" data-delay="50">
+      <i class="fab fa-github"></i>
+  </a>
+  <a href="mailto:q735613050@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top"
+      data-delay="50">
+      <i class="fas fa-envelope-open"></i>
+  </a>
+  <a href="tencent://AddContact/?fromId=50&amp;fromSubId=1&amp;subcmd=all&amp;uin=735613050" class="tooltipped"
+      target="_blank" data-tooltip="QQ联系我: 735613050" data-position="top" data-delay="50">
+      <i class="fab fa-qq"></i>
+  </a>
+  <a href="https://www.zhihu.com/people/liu-xin-wei-55" class="tooltipped" target="_blank"
+      data-tooltip="关注我的知乎: liu-xin-wei-55" data-position="top" data-delay="50">
+      <i class="fab fa-zhihu1">知</i>
+  </a>
+  <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/xinet" class="tooltipped"
+      data-tooltip="领英联系我: xinet" data-position="top" data-delay="50">
+      <i class="fab fa-linkedin"></i>
+  </a>
+  <div><a href="https://github.com/xinetzone/sanstyle">上善若水</a> 版权所有</div>
+</div>
+
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/CONTRIBUTING.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/xinetzone/cv-actions"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/xinetzone/cv-actions/issues/new?title=Issue%20on%20page%20%2FCONTRIBUTING.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   贡献的类型
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   贡献的必要条件
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   贡献文档
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#issue-pull-request">
+   Issue 与 Pull request 的行为准则
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   获得联系
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#todos">
+   TODOS
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>贡献指南<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>非常感谢您乐意为 cv actions 提供新鲜血液。正是更多像您这样的人，使得 cv actions 将逐渐发展为一个强大的计算机视觉社区。</p>
+<p>为了创建一个良好的社区环境，请您遵守我们社区的《<a class="reference internal" href="CODE_OF_CONDUCT.html"><span class="doc std std-doc">行为准则</span></a>》。如果您想要发起一个 Bug report 或者 Feature request，请您遵循 Issue 的模板进行贡献。同时也欢迎您贡献新的且实用的 Issue 与 Pull request templates。</p>
+<p>请您仔细阅读这份指南，因为，如果您这样做了，既可以节省您的宝贵时间，同时也对其他贡献者或者审阅者们的极大的尊重。</p>
+<p>本项目的<strong>目标</strong>是<strong>打造一个健康且可持续发展的计算机视觉社区。</strong></p>
+<section id="id2">
+<h2>贡献的类型<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>本项目不仅仅欢迎您贡献代码，同时也欢迎您贡献文档（请在 <code class="docutils literal notranslate"><span class="pre">/docs/</span></code> 中进行），教程或者本项目的使用手册等内容。</p>
+</section>
+<section id="id3">
+<h2>贡献的必要条件<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<ol class="simple">
+<li><p>如果您不了解如何对项目进贡献，请您参考 <a class="reference external" href="https://opensource.guide/zh-cn/how-to-contribute/">如何为开源做贡献</a>。</p></li>
+<li><p>为了方便项目的管理，请您使用 Git Flow 进行管理。当您将项目克隆到您的本地电脑后，请您运行：<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">flow</span> <span class="pre">init</span></code> 并随之切换到 develop。具体是使用细节请 📖 <a class="reference external" href="https://xinetzone.github.io/projects/">https://xinetzone.github.io/projects/</a>。</p></li>
+<li><p>本项目暂定以 Python 作为代码的开发语言，而文档的编写请使用 Markdown 进行工作。</p></li>
+<li><p>本项目在 GitHub 上维护的 master 分支作为预发布版本，而 develop 分支作为开发版本。其他功能版本请以 git flow 的规则进行管理。</p></li>
+<li><p>您贡献的 Python 代码需要支持 pep8，数学公式最好使用 markdown 的标准语法，比如 <code class="docutils literal notranslate"><span class="pre">$x^2=1$</span></code>等。</p></li>
+</ol>
+</section>
+<section id="id4">
+<h2>贡献文档<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>如果您仅仅只是想要贡献文档，或者写计算机视觉相关的博客以及拥有好的想法，您可以在 <code class="docutils literal notranslate"><span class="pre">/docs/</span></code> 目录下面进行贡献。贡献的方式很简单，您只需要在 <code class="docutils literal notranslate"><span class="pre">/docs/</span></code> 目录下编写您的文档，之后将您的文章的布局添加到 <code class="docutils literal notranslate"><span class="pre">TOC.md</span></code> 文件中。如果您需要载入图片，请您在 <code class="docutils literal notranslate"><span class="pre">/docs/images/</span></code> 下面放入图片，然后以 <code class="docutils literal notranslate"><span class="pre">![图片说明](images/你的图片目录/图片名称)</span></code> 的形式进行载入。因为 <code class="docutils literal notranslate"><span class="pre">/docs/</span></code> 是通过 GitPress 进行部署的，所以，如果您想要了解更多使用技巧可以参考：<a class="reference external" href="https://gitpress.io/c/cv_actions/gitpress_help">GitPress 学习</a>。</p>
+</section>
+<section id="issue-pull-request">
+<h2>Issue 与 Pull request 的行为准则<a class="headerlink" href="#issue-pull-request" title="永久链接至标题">¶</a></h2>
+<p>考虑到可读性与可理解性，在您创建 Issue 或者 Pull request（简写为 PR） 时，请遵循如下约定：</p>
+<ol class="simple">
+<li><p><strong>请给出您的 issue 或者 PR 的 context</strong>：即给出上下文语境。比如当您你运行程序时遇到一个错误，请解释你是如何操作的，并描述该错误现象是否具有再现性；当您提交一个新的idea，请您解释该 idea 您是如何想到的，并且说明您的 idea 的适用范围，是否可以将您的 idea 进行推广或者拓展。</p></li>
+<li><p><strong>您是否已经完成准备工作</strong>：请确认您是否阅读了项目的 README、文档、问题（开放的和关闭的），检查您的 issue 或者 PR 是否已经有人做过或者正在做，避免提交重复的议题或者请求。</p></li>
+<li><p>请您<strong>保持请求内容的短小而直接</strong>：每个人的时间和精力都是有限的，短小而直接的请求对大家都有益处。</p></li>
+<li><p><strong>请保持您的优雅</strong>：本社区禁止发布不良信息，注意用语文明而优雅，杜绝各种辱骂和打口水仗的行为。</p></li>
+</ol>
+</section>
+<section id="id5">
+<h2>获得联系<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p>您可以在 gitter&#64;<a class="reference external" href="https://gitter.im/watersome/community">cv-actions</a> 上讨论 Issue 等</p></li>
+<li><p>如果有疑问，请您 ✉️ <a class="reference external" href="mailto:xinzone&#37;&#52;&#48;outlook&#46;com">mailto:xinzone<span>&#64;</span>outlook<span>&#46;</span>com</a></p></li>
+</ul>
+</section>
+<section id="todos">
+<h2>TODOS<a class="headerlink" href="#todos" title="永久链接至标题">¶</a></h2>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> 利用 <a class="reference external" href="https://pre-commit.com/">pre-commit</a> 自动部署代码的格式，使其自动化支持 pep8 等格式。</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "xinetzone/cv-actions",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="CHANGELOG.html" title="上一页 页">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">上一页</p>
+                <p class="prevnext-title">变更日志</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="CODE_OF_CONDUCT.html" title="下一页 页">
+            <div class="prevnext-info">
+                <p class="prevnext-label">下一页</p>
+                <p class="prevnext-title">Contributor Covenant Code of Conduct</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By xinetzone<br/>
+        
+          <div class="extra_footer">
+            <p class="w3-card w3-pale-blue w3-padding">
+  Copyright © 2021
+  <a href="https://sanstylelab.github.io/">SanstyleLab</a> | 
+  Powered by <a href="https://github.com/executablebooks/jupyter-book">Jupyter Book</a>.
+</p>
+
+          </div>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
